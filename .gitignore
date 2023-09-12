@@ -1,0 +1,8 @@
+/node_modules
+.idea
+.vscode
+/dist
+.env
+/database-data
+./user_data.json
+/user_data.json
