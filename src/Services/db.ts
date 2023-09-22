@@ -1,11 +1,10 @@
 import { Pool } from "pg";
-
-const dotenv = require("dotenv");
+require("dotenv").config();
 
 const pool = new Pool({
   user: process.env.DB_USER,
   host: process.env.DB_HOST,
-  database: "chicken-bon",
+  database: process.env.DB_NAME,
   password: process.env.DB_PASS,
   port: 5432
 });
